@@ -20,8 +20,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 print(f"Training samples : {X_train.shape[0]}")
 print(f"Test samples     : {X_test.shape[0]}")
 
-# Train a Decision Tree using entropy as the split criterion ─
-# Entropy measures disorder in a node — the tree picks splits
+# Train a Decision Tree using entropy as the split criterion
+# Entropy measures disorder in a node - the tree picks splits
 # that reduce entropy the most (maximum information gain)
 entropy_decision_tree = DecisionTreeClassifier(
     criterion='entropy',

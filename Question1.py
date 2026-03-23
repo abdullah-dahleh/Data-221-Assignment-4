@@ -25,7 +25,7 @@ for label, count in zip(class_labels, class_counts):
 imbalance_ratio = class_counts[1] / class_counts[0]
 print(f"\nBenign-to-Malignant ratio: {imbalance_ratio:.2f}")
 
-# ── Bar chart of class distribution ──────────────────────────
+# Bar chart of class distribution
 fig, ax = plt.subplots(figsize=(5, 3))
 bar_colors = ['#E05C5C', '#5C9BE0']  # Red = malignant, Blue = benign
 bars = ax.bar(breast_cancer_data.target_names, class_counts,
@@ -42,7 +42,6 @@ plt.tight_layout()
 plt.savefig('q1_class_distribution.png', dpi=120)
 plt.show()
 
-# ─────────────────────────────────────────────────────────────
 # DISCUSSION (written in comments as required):
 #
 # IS THE DATASET BALANCED OR IMBALANCED?
@@ -58,4 +57,3 @@ plt.show()
 # Balanced classes, or strategies like class weighting or
 # recall-focused metrics, ensure the model works well for BOTH
 # classes, not just the one that appears most often.
-# ─────────────────────────────────────────────────────────────

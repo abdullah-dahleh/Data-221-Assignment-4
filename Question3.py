@@ -19,9 +19,9 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Train a constrained Decision Tree
-# max_depth=4        → tree can make at most 4 levels of splits
-# min_samples_split  → a node needs at least 10 samples to split
-# min_samples_leaf   → every leaf must contain at least 5 samples
+# max_depth=4        > tree can make at most 4 levels of splits
+# min_samples_split  > a node needs at least 10 samples to split
+# min_samples_leaf   > every leaf must contain at least 5 samples
 # These constraints prevent the tree from memorising noise
 constrained_tree = DecisionTreeClassifier(
     criterion='entropy',

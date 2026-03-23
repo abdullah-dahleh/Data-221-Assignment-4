@@ -116,5 +116,4 @@ plt.show()
 # example once, computes the loss, and adjusts its weights
 # via backpropagation. Training for multiple epochs allows the
 # model to iteratively improve its weights. Too few epochs
-# leads to underfitting; too many can lead to overfitting
-# if the model starts memorising training noise.
+# leads to underfitting; too many can lead to overfitting.
